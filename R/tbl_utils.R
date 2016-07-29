@@ -20,6 +20,15 @@ varTypes <- function(xdf, vars=NULL)
 
 
 # generate a new Xdf data source with file pointing to a random file, other parameters taken from input data source
+#' @title newTbl
+#' @description Makes a new tbl
+#' @details Wasn't exported and that was causing issues
+#' @author Jared P. Lander
+#' @export
+#' @param xdf Name of xdf
+#' @param fileSystem The file system we are on
+#' @return ?
+#' 
 newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf))
 {
     fname <- if(inherits(fileSystem, "RxNativeFileSystem"))
@@ -49,7 +58,6 @@ newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf))
 #' @author Jared P. Lander
 #' @param xdf A character string specifying the table to drop
 #' @return ?
-#' @rdname deleteTbl
 #' @export deleteTbl
 deleteTbl <- function(xdf)
 {
