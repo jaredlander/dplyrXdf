@@ -43,6 +43,14 @@ newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf))
 
 
 # delete one or more xdf tbls (vectorised)
+#' @title deleteTbl
+#' @description Drops XDF tables
+#' @details This was nto exported so it could not be seen
+#' @author Jared P. Lander
+#' @param xdf A character string specifying the table to drop
+#' @return ?
+#' @rdname deleteTbl
+#' @export deleteTbl
 deleteTbl <- function(xdf)
 {
     if(is.character(xdf))
