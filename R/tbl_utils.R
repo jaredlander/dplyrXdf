@@ -24,10 +24,9 @@ varTypes <- function(xdf, vars=NULL)
 #' @description Makes a new tbl
 #' @details Wasn't exported and that was causing issues
 #' @author Jared P. Lander
-#' @export
 #' @param xdf Name of xdf
 #' @param fileSystem The file system we are on
-#' @return ?
+#' @return Not sure
 #' 
 newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf))
 {
@@ -57,8 +56,7 @@ newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf))
 #' @details This was nto exported so it could not be seen
 #' @author Jared P. Lander
 #' @param xdf A character string specifying the table to drop
-#' @return ?
-#' @export deleteTbl
+#' @return Not sure
 deleteTbl <- function(xdf)
 {
     if(is.character(xdf))
