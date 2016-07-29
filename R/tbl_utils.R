@@ -26,6 +26,7 @@ varTypes <- function(xdf, vars=NULL)
 #' @author Jared P. Lander
 #' @param xdf Name of xdf
 #' @param fileSystem The file system we are on
+#' @export
 #' @return Not sure
 #' 
 newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf))
@@ -55,6 +56,7 @@ newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf))
 #' @description Drops XDF tables
 #' @details This was nto exported so it could not be seen
 #' @author Jared P. Lander
+#' @export
 #' @param xdf A character string specifying the table to drop
 #' @return Not sure
 deleteTbl <- function(xdf)
