@@ -20,6 +20,13 @@ varTypes <- function(xdf, vars=NULL)
 
 
 # generate a new Xdf data source with file pointing to a random file, other parameters taken from input data source
+#' @title newTbl
+#' @description Creates a new tbl
+#' @details Creates a new tbl in the specified file system and directory
+#' @param xdf Name of xdf file
+#' @param fileSystem The file system to put the files in
+#' @param tblDir Directory for the tbl
+#' @export
 newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf), tblDir=tempdir())
 {
     fname <- if(inherits(fileSystem, "RxNativeFileSystem"))
@@ -43,6 +50,12 @@ newTbl <- function(xdf=NULL, fileSystem=rxGetFileSystem(xdf), tblDir=tempdir())
 
 
 # delete one or more xdf tbls (vectorised)
+#' @title deleteTbl
+#' @description Deletes tbls
+#' @details Deletes tbls
+#' @param xdf Character specifying the path to an XDF file
+#' @return Not sure
+#' @export
 deleteTbl <- function(xdf)
 {
     if(is.character(xdf))
